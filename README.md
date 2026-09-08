@@ -1,4 +1,9 @@
-# ui-tokens
+# ui-console
+
+This package carries design tokens and the grammar of a console page: lists
+of things with states, facts and fields. It refuses components, layout,
+JavaScript and fonts; a product renders through this grammar with its own
+markup.
 
 Design tokens and the settings grammar shared by overnightworks products.
 Owned by agent-presentator's blessed picture `docs/mockups/m0-lobby.html`.
@@ -9,7 +14,7 @@ never moved; a broken release gets the next patch tag.
 Pin:
 
 ```
-https://github.com/overnightworks/ui-tokens/releases/download/v0.1.0/ui-tokens.css
+https://github.com/overnightworks/ui-console/releases/download/v0.2.0/ui-console.css
 ```
 
 Jinja and Svelte products vendor that file (do not hot-link it at runtime) and
@@ -104,9 +109,9 @@ Tags are never moved. Publish a tag and attach the stylesheet as the release
 asset, the same recipe webauth uses:
 
 ```sh
-git tag v0.1.0
-git push origin v0.1.0
-gh release create v0.1.0 ui-tokens.css --title v0.1.0 --generate-notes
+git tag v0.2.0
+git push origin v0.2.0
+gh release create v0.2.0 ui-console.css --title v0.2.0 --generate-notes
 ```
 
 Consumers pin that asset URL. A broken release gets the next patch tag.
